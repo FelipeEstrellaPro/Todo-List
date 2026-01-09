@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(135deg, #0026ff, #ff0000);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    margin-top: 10rem;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer {
+    color: white;
+    background-color: #ffffff3b;
+    text-align: center;
+    padding: 1rem;
+}
+
+header h1 {
+    font-weight: 600;
+}
+
+footer {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2rem 1rem;
+}
+
+.todo-container {
+    background: white;
+    padding: 1.5rem;
+    width: 100%;
+    max-width: 480px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.701);
+}
+
+form {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 0.6rem 0.7rem;
+    border-radius: 6px;
+    border: 2px solid #667eea;
+    font-size: 0.95rem;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #0f31c6;
+}
+
+button {
+    padding: 0.6rem 1rem;
+    border: none;
+    border-radius: 6px;
+    background: #667eea;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+button:hover {
+    background: #0f31c6;
+}
+
+#task-counter {
+    margin-bottom: 0.7rem;
+    font-weight: 500;
+    color: #444;
+}
+
+.filters {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.filters button {
+    flex: 1;
+    background: #f1f1f1;
+    color: #333;
+    border: 1px solid #ddd;
+    font-size: 0.85rem;
+}
+
+.filters button:hover {
+    background: #e6e6e6;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.6rem 0.4rem;
+    border-bottom: 1px solid #eee;
+    transition: background 0.2s ease;
+}
+
+li:hover {
+    background: #f9f9f9;
+}
+
+.task-content {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.task-content span {
+    font-size: 0.95rem;
+}
+
+.task-content input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #667eea;
+    cursor: pointer;
+}
+
+li.completed span {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.actions button {
+    background: transparent;
+    color: #e74c3c;
+    font-size: 1rem;
+    padding: 0.2rem 0.4rem;
+}
+
+.actions button:hover {
+    background: rgba(231, 76, 60, 0.1);
+    border-radius: 4px;
+}
